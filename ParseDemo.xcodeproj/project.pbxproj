@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3473823D1D610CDA0015545E /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3473823C1D610CDA0015545E /* GroupViewController.swift */; };
+		3473823F1D61118F0015545E /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3473823E1D61118F0015545E /* Category.swift */; };
+		347382411D6114E10015545E /* CategoryMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347382401D6114E10015545E /* CategoryMapper.swift */; };
+		347382431D611C0A0015545E /* CategoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347382421D611C0A0015545E /* CategoryManager.swift */; };
+		347382451D611C470015545E /* ParseCategoryDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347382441D611C470015545E /* ParseCategoryDAO.swift */; };
+		347382471D6149610015545E /* CategoryDataUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347382461D6149610015545E /* CategoryDataUtil.swift */; };
 		7BC1B42E1D5EEF83008DA8F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC1B42D1D5EEF83008DA8F8 /* AppDelegate.swift */; };
 		7BC1B4331D5EEF83008DA8F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BC1B4311D5EEF83008DA8F8 /* Main.storyboard */; };
 		7BC1B4351D5EEF83008DA8F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BC1B4341D5EEF83008DA8F8 /* Assets.xcassets */; };
@@ -43,6 +49,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3473823C1D610CDA0015545E /* GroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
+		3473823E1D61118F0015545E /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		347382401D6114E10015545E /* CategoryMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryMapper.swift; sourceTree = "<group>"; };
+		347382421D611C0A0015545E /* CategoryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryManager.swift; sourceTree = "<group>"; };
+		347382441D611C470015545E /* ParseCategoryDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseCategoryDAO.swift; sourceTree = "<group>"; };
+		347382461D6149610015545E /* CategoryDataUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryDataUtil.swift; sourceTree = "<group>"; };
 		4AD8284E5799682F1B7765A1 /* Pods-ParseDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParseDemo/Pods-ParseDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		58E853FB6A92184EC7FC527F /* Pods_ParseDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParseDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CCA59A9820EFF8C6F05AEE6 /* Pods-ParseDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParseDemoUITests/Pods-ParseDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -176,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				7BC1B45E1D5F0CBC008DA8F8 /* ParseGameScoreDAO.swift */,
+				347382441D611C470015545E /* ParseCategoryDAO.swift */,
 			);
 			name = Datastore;
 			sourceTree = "<group>";
@@ -184,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				7BC1B4611D5F0CF1008DA8F8 /* GameScore.swift */,
+				3473823E1D61118F0015545E /* Category.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -192,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				7BC1B4641D5F1A28008DA8F8 /* GameScoreMapper.swift */,
+				347382401D6114E10015545E /* CategoryMapper.swift */,
 			);
 			name = Mapper;
 			sourceTree = "<group>";
@@ -200,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				7BC1B4661D5F1C72008DA8F8 /* GameScoreManager.swift */,
+				347382421D611C0A0015545E /* CategoryManager.swift */,
 			);
 			name = Manager;
 			sourceTree = "<group>";
@@ -208,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				7BC1B4681D5FB896008DA8F8 /* GameScoreViewController.swift */,
+				3473823C1D610CDA0015545E /* GroupViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -217,6 +234,7 @@
 			children = (
 				7BC1B45B1D5F07A7008DA8F8 /* Constants.swift */,
 				7BC1B46D1D5FC0F1008DA8F8 /* GameScoreDataUtil.swift */,
+				347382461D6149610015545E /* CategoryDataUtil.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -493,12 +511,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3473823D1D610CDA0015545E /* GroupViewController.swift in Sources */,
+				3473823F1D61118F0015545E /* Category.swift in Sources */,
 				7BC1B46E1D5FC0F1008DA8F8 /* GameScoreDataUtil.swift in Sources */,
 				7BC1B4621D5F0CF1008DA8F8 /* GameScore.swift in Sources */,
 				7BC1B42E1D5EEF83008DA8F8 /* AppDelegate.swift in Sources */,
+				347382431D611C0A0015545E /* CategoryManager.swift in Sources */,
+				347382451D611C470015545E /* ParseCategoryDAO.swift in Sources */,
+				347382471D6149610015545E /* CategoryDataUtil.swift in Sources */,
 				7BC1B4671D5F1C72008DA8F8 /* GameScoreManager.swift in Sources */,
 				7BC1B45C1D5F07A7008DA8F8 /* Constants.swift in Sources */,
 				7BC1B4691D5FB896008DA8F8 /* GameScoreViewController.swift in Sources */,
+				347382411D6114E10015545E /* CategoryMapper.swift in Sources */,
 				7BC1B45F1D5F0CBC008DA8F8 /* ParseGameScoreDAO.swift in Sources */,
 				7BC1B4651D5F1A28008DA8F8 /* GameScoreMapper.swift in Sources */,
 			);

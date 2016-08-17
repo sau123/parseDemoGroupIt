@@ -4,7 +4,6 @@
 //
 //  Created by Ankit Jasuja on 8/13/16.
 //  Copyright © 2016 iOS Group 5. All rights reserved.
-//
 
 import UIKit
 import Parse
@@ -14,7 +13,7 @@ class GameScoreManager: NSObject {
     let gameScoreDao = ParseGameScoreDAO(className: Constants.GAME_SCORE_CLASSNAME)
     let gameScoreMapper = GameScoreMapper()
     
-    func saveGameScore(gameScore : GameScore, completion : (Bool, NSError?) -> ()) -> Void {
+    func saveGameScore(gameScore : GameScore, completion : (Bool, NSError?) -> ()) {
         let pfObject = gameScoreMapper.toPFObject(gameScore)
         gameScoreDao.saveGameScore(pfObject) { (created : Bool, error : NSError?) in
             completion(created, error)
@@ -31,6 +30,8 @@ class GameScoreManager: NSObject {
     func getAllGameScores(completion : ([GameScore], NSError?) -> Void) {
         gameScoreDao.getAllGameScores { (pfObjects : [PFObject]?, error : NSError?) in
             completion(self.gameScoreMapper.toGameScores(pfObjects), error)
+            print(pfObjects)
+
         }
     }
     

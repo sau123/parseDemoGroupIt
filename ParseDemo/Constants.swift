@@ -11,11 +11,12 @@ import UIKit
 class Constants: NSObject {
 
     // ======== Parse ========
-    
-    static let parseAppId : String = "parse-demo-2-app-id"
-    static let parseServer : String = "https://parse-demo-2.herokuapp.com/parse"
+    static let parseAppId : String = "groupit2"
+    static let parseServer : String = "https://groupit2.herokuapp.com/parse"
     
     // ======== GameScore ======
-    
     static let GAME_SCORE_CLASSNAME : String = "GameScore"
+    
+    // ======== Category ======
+    static let CATOEGORY_CLASSNAME : String = "Category"
 }

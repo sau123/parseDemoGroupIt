@@ -20,6 +20,7 @@ class ParseGameScoreDAO: NSObject {
     func saveGameScore(pfObject :  PFObject, completion : (Bool, NSError?) -> Void) {
         pfObject.saveInBackgroundWithBlock { (created: Bool, error: NSError?) -> Void in
             completion(created, error)
+            print(pfObject)
         }
     }
     

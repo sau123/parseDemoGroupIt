@@ -10,7 +10,6 @@ import UIKit
 import Parse
 
 class GameScoreMapper: NSObject {
-    
     func toGameScore(pfObject : PFObject?) -> GameScore? {
         var gameScoreDictionary : Dictionary<String, AnyObject> = [:]
         if let pfObject = pfObject {

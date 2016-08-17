@@ -26,4 +26,6 @@ class GameScoreDataUtil: NSObject {
         return GameScore(gameScoreDictionary: gameScoreDictionary)
     }
 
+    
+    
 }
